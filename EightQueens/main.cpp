@@ -102,7 +102,7 @@ void brute(int* board, vector<vector<bool>>& options)
 				options[i - 1][k] = false;
 			}
 			board[i - 1] = -1;
-			i -= 2;
+			i -= 2; // i = i - 2;
 			continue;
 		}
 		else if (found == false && i == 0)
